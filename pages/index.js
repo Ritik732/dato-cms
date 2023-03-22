@@ -56,7 +56,7 @@ const HOMEPAGE_QUERY = `query { course {
    }
 
 }`;
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const data = await request({
     query: HOMEPAGE_QUERY
 

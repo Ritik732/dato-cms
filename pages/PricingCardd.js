@@ -26,7 +26,7 @@ const PRICING_QUERY = `query {
   }
 }`;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const data = await request({
     query: PRICING_QUERY
   });
